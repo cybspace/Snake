@@ -10,19 +10,12 @@ namespace Snake
 	{
 		static void Main(string[] args)
 		{
-			List<char> charList = new List<char>();
-			charList.Add('#');
-			charList.Add('#');
-			charList.Add('#');
-			charList.Add('#');
-			int count = 0;
 
-			foreach (char i in charList)
-			{
-				Point p = new Point(count, 0, charList[count]);
-				p.Draw();
-				count++;
-			}
+			HorizontalLine hLine = new HorizontalLine(2, 10, 4, '*');
+			hLine.Draw();
+
+			VerticalLine vLine = new VerticalLine(15, 5, 15, '*');
+			vLine.Draw();
 
 			Console.ReadLine();
 
