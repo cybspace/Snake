@@ -10,20 +10,18 @@ namespace Snake
 	{
 		static void Main(string[] args)
 		{
+			List<char> charList = new List<char>();
+			charList.Add('#');
+			charList.Add('#');
+			charList.Add('#');
+			charList.Add('#');
+			int count = 0;
 
-			Point p1 = new Point(1, 3, '*');
-			Point p2 = new Point(4, 5, '#');
-			Point p3 = new Point(7, 9, '$');
-			Point p4 = new Point(11, 2, '%');
-
-			List<Point> pList = new List<Point>();
-			pList.Add(p1);
-			pList.Add(p2);
-			pList.Add(p3);
-			pList.Add(p4);
-
-			foreach (Point i in pList) {
-				i.Draw();
+			foreach (char i in charList)
+			{
+				Point p = new Point(count, 0, charList[count]);
+				p.Draw();
+				count++;
 			}
 
 			Console.ReadLine();
