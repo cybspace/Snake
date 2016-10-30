@@ -1,10 +1,11 @@
 ﻿using System;
 namespace Snake
 {
-	public class Direction
+	enum Direction
 	{
-		public Direction()
-		{
-		}
+		LEFT,
+		RIGHT,
+		UP,
+		DOWN
 	}
 }

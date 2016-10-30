@@ -20,6 +20,10 @@ namespace Snake
 			leftLine.Draw();
 			rightLine.Draw();
 
+			Point p = new Point(4, 6, '*');
+			Snake snake = new Snake(p, 4, Direction.RIGHT);
+			snake.Draw();
+
 			Console.ReadLine();
 
 		}
